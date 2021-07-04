@@ -8,6 +8,7 @@
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios de matplotlib
+#from anexo.ejemplos_ppt import marker_color
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -33,5 +34,14 @@ if __name__ == '__main__':
     # Elegir un marker a elección
 
     # Crear acá su gráfico
+
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.scatter (x, y,label='y', c='red', marker='.')
+    ax.grid()
+    ax.legend()
+    plt.show()
+    
+    #Tuve que sacar un import porque no me funcioba bien, le puse un "#"
 
     print("terminamos")

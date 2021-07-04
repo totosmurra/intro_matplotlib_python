@@ -38,4 +38,12 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+
+    ax = fig.add_subplot()
+    ax.plot(x, y, c='red', label='y')
+    ax.legend()
+    ax.grid()
+    plt.show()
+
     print("terminamos")
